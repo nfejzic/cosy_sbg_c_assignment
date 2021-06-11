@@ -20,7 +20,7 @@ The `.dat` files are files containing information about cities (`stadt.dat`), ar
 
 | area_id | area_name | super_area_id | type |
 
-_NOTE:_ This file is not used in this project, was there as part of assignment specification
+**NOTE:** This file is not used in this project, was there as part of assignment specification
 
 ### `strasse.dat` is formatted as follows:
 
