@@ -1,0 +1,27 @@
+Die zu erstellenden Programme sollen auf die Dateien stadt.dat, gebiet.dat und strasse.dat zugreifen.
+Der exakte Filename wird allerdings auf der Kommandozeile übergeben.
+Die Dateien zum Testen bitte hier herunterladen (und nicht in Git einchecken).
+Die erste Datei stadt.dat enthält Städte mit folgenden Angaben:
+
+stadtId name einwohner gebietId meereshöhe
+
+Die Einträge sind durch ein Leerzeichen getrennt.
+Eine Stadt ist eindeutig durch stadtId (natürliche Zahl) identifiziert.
+Die zweite Datei gebiet.dat enthält Regionen (R), Länder (L) und Kontinente (K), in denen die Städte angesiedelt sind.
+Eine Zeile enthält:
+
+gebietId name obergebietId typ
+
+gebietId ist eine eindeutige Id (natürliche Zahl), die in stadt.dat referenziert wird.
+name ist der Name des Gebiets. obergebiet ist z.B. die Id eines Landes von dem das Gebiet Teil ist.
+Der typ kann R, L oder K sein (siehe oben).
+R kann Obergebiet L oder R haben, L kann Obergebiet K haben.
+Die dritte Datei strasse.dat definiert Straßen zwischen den Städten. Eine Zeile enthält:
+
+vonStadtId nachStadtId entfernung
+
+Straßen sind natürlich in beide Richtungen benutzbar, jedoch nur in einer Richtung (von vonStadt nach nachStadt)
+eingetragen. entfernung gibt die Länge der Straße in km an.
+
+Beachte: Die Einträge in den Dateien sind in zufälliger Reihenfolge.
+Ein Obergebiet kann z.B. vor oder nach einem Untergebiet kommen.
