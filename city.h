@@ -21,7 +21,7 @@ typedef struct {
 City *createCity(CityList *list);
 City *createCitySpecified(CityList *list, int id, char *name, int population,
                           int areaId, int elevation);
-void deleteCity();
+void deleteCity(City *city);
 
 CityList *createCityList();
 void readCityList(CityList *list, char *filePath, char *fromCity, char *toCity);
